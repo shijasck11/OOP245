@@ -1,0 +1,7 @@
+Flower.cpp: In constructor ‘sdds::Flower::Flower(const char*, const char*, double)’:
+Flower.cpp:13:47: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+   bool validName = name != nullptr && name != "";
+                                               ^
+Flower.cpp:14:50: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+   bool validColor = color != nullptr && color != "";
+                                                  ^

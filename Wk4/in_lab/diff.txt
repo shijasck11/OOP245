@@ -1,0 +1,14 @@
+In line number 18 of your output:
+The output should be:
+This is an empty flower...
+^
+But your output is: 
+ Rose has departed...
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [T] ASCII code(84)
+but you printed
+  [Space] ASCII code(32)
+

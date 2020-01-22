@@ -1,0 +1,14 @@
+In line number 14 of your output:
+The output should be:
+
+^
+But your output is: 
+This is a replica of emptiness
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [Newline (\n) or Carriage Retrun (\r)] ASCII code(13)
+but you printed
+  [T] ASCII code(84)
+

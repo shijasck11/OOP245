@@ -1,0 +1,65 @@
+Script started on Thu 03 Oct 2019 09:59:30 PM EDT
+==207435== Memcheck, a memory error detector
+==207435== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==207435== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==207435== Command: ws
+==207435== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Testing Empty Flowers
+----------------------------------------------------------------
+1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1
+This is an empty flower...
+
+Testing Empty Strings
+----------------------------------------------------------------
+2 - 2 - 2 - 2 - 2 - 2 - 2 - 2 - 2 - 2
+ Rose has departed...
+Ruby  has departed...
+Flower:  RosePrice: 7.5
+Flower: Ruby Price: 7.8
+
+Testing Non Empty Flowers
+----------------------------------------------------------------
+3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3
+Red Rose has departed...
+Blue Rose has departed...
+Yellow Sunflower has departed...
+Flower: Red RosePrice: 2.25
+Flower: Blue RosePrice: 9.99
+Flower: Yellow SunflowerPrice: 1.25
+
+Testing Setting an Empty Flower
+----------------------------------------------------------------
+4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4
+This is an empty flower...
+Enter the flower's name... : ^C==207435== 
+==207435== Process terminating with default action of signal 2 (SIGINT)
+==207435==    at 0x57440F0: __read_nocancel (in /usr/lib64/libc-2.17.so)
+==207435==    by 0x56D0C03: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==207435==    by 0x56D1DD1: _IO_default_uflow (in /usr/lib64/libc-2.17.so)
+==207435==    by 0x56CC63D: getc (in /usr/lib64/libc-2.17.so)
+==207435==    by 0x4ECB1BC: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib64/libstdc++.so.6.0.19)
+==207435==    by 0x4EABA87: std::istream::getline(char*, long, char) (in /usr/lib64/libstdc++.so.6.0.19)
+==207435==    by 0x401C76: sdds::read(char*, int, char const*) (in /home/msbcherakkatil/oop/Wk4/in_lab/ws)
+==207435==    by 0x4012BE: sdds::Flower::setName(char const*) (in /home/msbcherakkatil/oop/Wk4/in_lab/ws)
+==207435==    by 0x40145A: sdds::Flower::setFlower() (in /home/msbcherakkatil/oop/Wk4/in_lab/ws)
+==207435==    by 0x40192C: main (in /home/msbcherakkatil/oop/Wk4/in_lab/ws)
+==207435== 
+==207435== HEAP SUMMARY:
+==207435==     in use at exit: 48 bytes in 10 blocks
+==207435==   total heap usage: 10 allocs, 0 frees, 48 bytes allocated
+==207435== 
+==207435== LEAK SUMMARY:
+==207435==    definitely lost: 0 bytes in 0 blocks
+==207435==    indirectly lost: 0 bytes in 0 blocks
+==207435==      possibly lost: 0 bytes in 0 blocks
+==207435==    still reachable: 48 bytes in 10 blocks
+==207435==         suppressed: 0 bytes in 0 blocks
+==207435== Rerun with --leak-check=full to see details of leaked memory
+==207435== 
+==207435== For counts of detected and suppressed errors, rerun with: -v
+==207435== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Thu 03 Oct 2019 10:00:12 PM EDT

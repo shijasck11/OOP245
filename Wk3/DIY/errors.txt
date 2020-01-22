@@ -1,0 +1,30 @@
+MarksReport.cpp: In member function ‘void sdds::MarksReport::initialize()’:
+MarksReport.cpp:10:4: error: ‘n_mark’ was not declared in this scope
+    n_mark = N_UNDEFINED;
+    ^
+MarksReport.cpp:10:13: error: ‘N_UNDEFINED’ was not declared in this scope
+    n_mark = N_UNDEFINED;
+             ^
+MarksReport.cpp:11:4: error: ‘subname’ was not declared in this scope
+    subname[0] = 0;
+    ^
+MarksReport.cpp:12:4: error: ‘gpa’ was not declared in this scope
+    gpa = 0;
+    ^
+MarksReport.cpp: In member function ‘int sdds::MarksReport::getMarks()’:
+MarksReport.cpp:19:11: error: ‘nom’ was not declared in this scope
+    cin >> nom;
+           ^
+MarksReport.cpp:24:12: error: ‘subname’ was not declared in this scope
+     cin >> subname; 
+            ^
+MarksReport.cpp:26:12: error: ‘n_mark’ was not declared in this scope
+     cin >> n_mark;
+            ^
+MarksReport.cpp:29:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+MarksReport.cpp: In member function ‘void sdds::MarksReport::print()’:
+MarksReport.cpp:35:12: error: ‘subname’ was not declared in this scope
+    cout << subname << cout.width(60) << cout.fill('.') << endl;
+            ^
